@@ -1,0 +1,782 @@
+
+/* =====================================================
+   KGOSI DAVID MOGATLE
+   PORTFOLIO — OCEAN & CYAN
+   Visual Identity: Contemporary Digital Editorial
+===================================================== */
+
+
+/* =========================
+   01. ROOT & RESET
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+    --ocean: #12304A;
+    --ocean-deep: #0A2034;
+    --cyan: #32B6C5;
+    --cyan-light: #8ADCE3;
+    --ice: #EAF5F5;
+    --white: #FFFFFF;
+    --text: #173247;
+    --muted: #718894;
+    --border: #D7E6E8;
+    --surface: #F5FAFA;
+
+    --font-main: 'Manrope', sans-serif;
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-code: 'DM Mono', monospace;
+
+    --container: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--white);
+    color: var(--text);
+    font-family: var(--font-main);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================
+   02. HEADER & NAVIGATION
+========================= */
+
+.site-header {
+    width: 100%;
+    min-height: 88px;
+    padding: 18px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    z-index: 10;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    flex-shrink: 0;
+}
+
+.brand-symbol {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    background: var(--ocean);
+    color: var(--cyan);
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.brand-name {
+    color: var(--ocean);
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.main-navigation a {
+    color: var(--muted);
+    font-size: 0.72rem;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.main-navigation a:hover,
+.main-navigation a.active {
+    color: var(--cyan);
+}
+
+.header-contact {
+    padding: 11px 17px;
+    background: var(--ocean);
+    color: var(--white);
+    font-size: 0.72rem;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: background 0.3s ease;
+}
+
+.header-contact:hover {
+    background: #1C536F;
+}
+
+
+/* =========================
+   03. HOMEPAGE HERO
+========================= */
+
+.hero-section {
+    width: 100%;
+    min-height: 650px;
+    padding: 85px 8% 80px;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 65px;
+    background: var(--ice);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 610px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+    color: var(--ocean);
+    font-family: var(--font-code);
+    font-size: 0.65rem;
+    letter-spacing: 1.2px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--cyan);
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(50, 182, 197, 0.13);
+}
+
+.hero-introduction {
+    margin-bottom: 17px;
+    color: var(--muted);
+    font-family: var(--font-code);
+    font-size: 0.72rem;
+    letter-spacing: 1.5px;
+}
+
+.hero-content h1 {
+    color: var(--ocean);
+    font-family: var(--font-display);
+    font-size: clamp(4rem, 8vw, 7.3rem);
+    font-weight: 700;
+    line-height: 0.91;
+    letter-spacing: -6px;
+}
+
+.hero-content h1 span {
+    color: var(--cyan);
+}
+
+.hero-description {
+    max-width: 490px;
+    margin-top: 30px;
+    color: #59717E;
+    font-size: 0.96rem;
+    line-height: 1.9;
+}
+
+.hero-actions {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.button-primary {
+    min-height: 50px;
+    padding: 0 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: var(--ocean);
+    color: var(--white);
+    font-size: 0.78rem;
+    font-weight: 700;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.button-primary:hover {
+    background: #1C536F;
+    transform: translateY(-3px);
+}
+
+.button-primary span {
+    color: var(--cyan);
+    font-size: 1rem;
+}
+
+.button-text {
+    color: var(--ocean);
+    font-size: 0.78rem;
+    font-weight: 800;
+    border-bottom: 1px solid var(--cyan);
+    padding-bottom: 5px;
+}
+
+
+/* =========================
+   04. HERO VISUAL
+========================= */
+
+.hero-visual {
+    width: 100%;
+    max-width: 490px;
+    margin-left: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.visual-topline,
+.visual-bottomline {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    color: var(--muted);
+    font-family: var(--font-code);
+    font-size: 0.58rem;
+    letter-spacing: 1px;
+}
+
+.visual-main {
+    min-height: 430px;
+    margin: 17px 0;
+    padding: 45px;
+    background: var(--ocean);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.visual-circle {
+    position: absolute;
+    border: 1px solid rgba(138, 220, 227, 0.35);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.circle-one {
+    width: 330px;
+    height: 330px;
+    top: -100px;
+    right: -90px;
+}
+
+.circle-two {
+    width: 230px;
+    height: 230px;
+    top: -50px;
+    right: -40px;
+}
+
+.visual-number {
+    position: absolute;
+    top: 22px;
+    left: 30px;
+    color: rgba(255, 255, 255, 0.12);
+    font-family: var(--font-display);
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.visual-message {
+    position: relative;
+    z-index: 2;
+}
+
+.visual-message > span {
+    color: var(--cyan);
+    font-family: var(--font-code);
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+}
+
+.visual-message h2 {
+    margin-top: 15px;
+    color: var(--white);
+    font-family: var(--font-display);
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 0.98;
+    letter-spacing: -2px;
+}
+
+.visual-coordinate {
+    position: absolute;
+    top: 35px;
+    right: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    color: var(--cyan-light);
+    font-family: var(--font-code);
+    font-size: 0.52rem;
+    letter-spacing: 1px;
+    text-align: right;
+}
+
+
+/* =========================
+   05. INTRODUCTION STRIP
+========================= */
+
+.intro-strip {
+    min-height: 95px;
+    padding: 20px 8%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 25px;
+    background: var(--ocean-deep);
+    color: var(--white);
+}
+
+.strip-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: var(--font-code);
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+}
+
+.strip-number {
+    color: var(--cyan);
+    font-size: 0.85rem;
+}
+
+
+/* =========================
+   06. HOME OVERVIEW
+========================= */
+
+.home-overview {
+    padding: 125px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: start;
+}
+
+.section-index {
+    color: var(--cyan);
+    font-family: var(--font-code);
+    font-size: 0.66rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.section-heading h2,
+.direction-heading h2 {
+    margin-top: 25px;
+    color: var(--ocean);
+    font-family: var(--font-display);
+    font-size: clamp(2.7rem, 5vw, 4.5rem);
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -2.5px;
+}
+
+.section-heading h2 span,
+.direction-heading h2 span {
+    color: var(--cyan);
+}
+
+.overview-content p {
+    margin-bottom: 22px;
+    color: #607783;
+    font-size: 0.92rem;
+    line-height: 2;
+}
+
+.text-link {
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--ocean);
+    font-size: 0.8rem;
+    font-weight: 800;
+    border-bottom: 1px solid var(--cyan);
+    padding-bottom: 7px;
+}
+
+.text-link span {
+    color: var(--cyan);
+}
+
+
+/* =========================
+   07. CAREER DIRECTIONS
+========================= */
+
+.direction-section {
+    padding: 110px 10%;
+    background: var(--surface);
+}
+
+.direction-heading {
+    margin-bottom: 55px;
+}
+
+.direction-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.direction-card {
+    min-height: 390px;
+    padding: 38px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.direction-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 40px rgba(18, 48, 74, 0.08);
+}
+
+.direction-card-accent {
+    background: var(--ocean);
+    border-color: var(--ocean);
+    color: var(--white);
+}
+
+.card-number {
+    color: var(--cyan);
+    font-family: var(--font-code);
+    font-size: 0.8rem;
+}
+
+.card-category {
+    margin-top: 35px;
+    color: var(--muted);
+    font-family: var(--font-code);
+    font-size: 0.59rem;
+    letter-spacing: 1px;
+}
+
+.direction-card-accent .card-category {
+    color: var(--cyan-light);
+}
+
+.direction-card h3 {
+    margin-top: 18px;
+    color: var(--ocean);
+    font-family: var(--font-display);
+    font-size: 3.5rem;
+    line-height: 0.95;
+    letter-spacing: -2px;
+}
+
+.direction-card-accent h3 {
+    color: var(--white);
+}
+
+.direction-card p {
+    max-width: 360px;
+    margin-top: 20px;
+    color: var(--muted);
+    font-size: 0.83rem;
+    line-height: 1.8;
+}
+
+.direction-card-accent p {
+    color: #C4D9E1;
+}
+
+.direction-card a {
+    margin-top: auto;
+    padding-top: 25px;
+    color: var(--cyan);
+    font-size: 0.72rem;
+    font-weight: 800;
+}
+
+
+/* =========================
+   08. CLOSING SECTION
+========================= */
+
+.home-closing {
+    padding: 120px 10%;
+    background: var(--ice);
+    text-align: center;
+}
+
+.home-closing h2 {
+    margin-top: 25px;
+    color: var(--ocean);
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+.home-closing p {
+    max-width: 520px;
+    margin: 25px auto 30px;
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   09. FOOTER
+========================= */
+
+.site-footer {
+    min-height: 100px;
+    padding: 25px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: var(--ocean-deep);
+    color: #A9C2CE;
+}
+
+.footer-brand {
+    color: var(--cyan);
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.site-footer p,
+.site-footer > span {
+    font-family: var(--font-code);
+    font-size: 0.58rem;
+    letter-spacing: 0.8px;
+}
+
+
+/* =========================
+   10. RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1100px) {
+
+    .site-header {
+        flex-wrap: wrap;
+    }
+
+    .main-navigation {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        padding-top: 12px;
+    }
+
+    .hero-section {
+        padding-left: 6%;
+        padding-right: 6%;
+        gap: 35px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(4rem, 9vw, 6rem);
+    }
+
+    .home-overview {
+        gap: 55px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .hero-section {
+        grid-template-columns: 1fr;
+        padding-top: 75px;
+        padding-bottom: 70px;
+    }
+
+    .hero-content {
+        max-width: 700px;
+    }
+
+    .hero-visual {
+        max-width: 550px;
+        margin: 20px auto 0;
+    }
+
+    .visual-main {
+        min-height: 370px;
+    }
+
+    .home-overview {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+
+    .direction-section {
+        padding: 85px 7%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .site-header {
+        padding: 16px 5%;
+        gap: 15px;
+    }
+
+    .brand-name {
+        font-size: 0.7rem;
+    }
+
+    .header-contact {
+        padding: 9px 12px;
+        font-size: 0.65rem;
+    }
+
+    .main-navigation {
+        gap: 15px;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 8px;
+    }
+
+    .main-navigation a {
+        white-space: nowrap;
+        font-size: 0.66rem;
+    }
+
+    .hero-section {
+        padding: 65px 6% 60px;
+    }
+
+    .hero-label {
+        font-size: 0.55rem;
+        margin-bottom: 25px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(3.5rem, 15vw, 5.5rem);
+        letter-spacing: -3px;
+    }
+
+    .hero-description {
+        font-size: 0.85rem;
+    }
+
+    .hero-actions {
+        gap: 20px;
+    }
+
+    .visual-main {
+        min-height: 330px;
+        padding: 30px;
+    }
+
+    .visual-message h2 {
+        font-size: 3.2rem;
+    }
+
+    .visual-number {
+        font-size: 6rem;
+    }
+
+    .intro-strip {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 27px 7%;
+    }
+
+    .strip-item {
+        font-size: 0.6rem;
+    }
+
+    .home-overview {
+        padding: 75px 7%;
+    }
+
+    .section-heading h2,
+    .direction-heading h2 {
+        font-size: 3rem;
+    }
+
+    .direction-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .direction-card {
+        min-height: 350px;
+        padding: 30px;
+    }
+
+    .direction-card h3 {
+        font-size: 3.2rem;
+    }
+
+    .home-closing {
+        padding: 85px 7%;
+    }
+
+    .home-closing h2 {
+        font-size: 3.5rem;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 6%;
+    }
+
+    .site-footer p {
+        line-height: 1.8;
+    }
+
+}
