@@ -780,3 +780,487 @@ a {
     }
 
 }
+
+/* =====================================================
+   11. SHARED INNER PAGE FOUNDATION
+===================================================== */
+
+.section-label {
+    color: var(--cyan);
+    font-family: var(--font-code);
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.subpage-hero {
+    min-height: 480px;
+    padding: 100px 10%;
+    display: flex;
+    align-items: center;
+    background: var(--ice);
+    position: relative;
+    overflow: hidden;
+}
+
+.subpage-hero::after {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    right: -130px;
+    bottom: -220px;
+    border: 1px solid rgba(50, 182, 197, 0.35);
+    border-radius: 50%;
+}
+
+.subpage-hero > div,
+.subpage-hero-content {
+    max-width: 800px;
+    position: relative;
+    z-index: 1;
+}
+
+.subpage-hero h1,
+.application-hero h1,
+.email-hero h1,
+.study-hero h1 {
+    margin-top: 22px;
+    color: var(--ocean);
+    font-family: var(--font-display);
+    font-size: clamp(3.5rem, 7vw, 6.5rem);
+    line-height: 0.95;
+    letter-spacing: -4px;
+}
+
+.subpage-hero h1 span,
+.application-hero h1 span,
+.email-hero h1 span,
+.study-hero h1 span {
+    color: var(--cyan);
+}
+
+.subpage-hero p:not(.section-label) {
+    max-width: 620px;
+    margin-top: 25px;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+
+/* =========================
+   SHARED CONTENT SECTIONS
+========================= */
+
+.page-section,
+.content-section {
+    padding: 100px 10%;
+}
+
+.page-introduction,
+.inner-introduction {
+    max-width: 850px;
+}
+
+.page-introduction h2,
+.inner-introduction h2,
+.section-title {
+    margin-top: 22px;
+    color: var(--ocean);
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.05;
+    letter-spacing: -2.5px;
+}
+
+.page-introduction h2 span,
+.inner-introduction h2 span,
+.section-title span {
+    color: var(--cyan);
+}
+
+.page-introduction p,
+.inner-introduction p,
+.content-section > p {
+    margin-top: 20px;
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   CONTENT CARD SYSTEM
+========================= */
+
+.content-grid,
+.info-grid,
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 45px;
+}
+
+.info-card,
+.content-card,
+.detail-card {
+    padding: 35px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+}
+
+.info-card h3,
+.content-card h3,
+.detail-card h3 {
+    margin: 20px 0 12px;
+    color: var(--ocean);
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+}
+
+.info-card p,
+.content-card p,
+.detail-card p {
+    color: var(--muted);
+    font-size: 0.87rem;
+    line-height: 1.85;
+}
+
+.card-index {
+    color: var(--cyan);
+    font-family: var(--font-code);
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   12. ABOUT PAGE
+===================================================== */
+
+.about-page {
+    overflow: hidden;
+}
+
+.about-introduction {
+    padding: 110px 10%;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 90px;
+}
+
+.about-introduction h2 {
+    margin-top: 22px;
+    color: var(--ocean);
+    font-family: var(--font-display);
+    font-size: clamp(2.8rem, 5vw, 4.8rem);
+    line-height: 1.05;
+    letter-spacing: -2.5px;
+}
+
+.about-introduction-content p {
+    margin-bottom: 20px;
+    color: var(--muted);
+    font-size: 0.93rem;
+    line-height: 2;
+}
+
+.about-traits {
+    padding: 100px 10%;
+    background: var(--ocean);
+}
+
+.about-traits .section-label {
+    color: var(--cyan-light);
+}
+
+.about-traits h2 {
+    max-width: 650px;
+    margin-top: 20px;
+    color: var(--white);
+    font-family: var(--font-display);
+    font-size: clamp(2.7rem, 5vw, 4.5rem);
+    line-height: 1.05;
+}
+
+.traits-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid rgba(255,255,255,0.15);
+    border-left: 1px solid rgba(255,255,255,0.15);
+}
+
+.trait-card {
+    min-height: 250px;
+    padding: 30px;
+    border-right: 1px solid rgba(255,255,255,0.15);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.trait-number {
+    color: var(--cyan);
+    font-family: var(--font-code);
+    font-size: 0.72rem;
+}
+
+.trait-card h3 {
+    margin: 35px 0 12px;
+    color: var(--white);
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+}
+
+.trait-card p {
+    color: #B6CBD5;
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   13. TIMELINE / ACADEMIC JOURNEY
+===================================================== */
+
+.timeline-section {
+    padding: 100px 10%;
+}
+
+.timeline {
+    max-width: 1000px;
+    margin-top: 50px;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 35px;
+    padding: 35px 0;
+    border-top: 1px solid var(--border);
+}
+
+.timeline-year {
+    color: var(--cyan);
+    font-family: var(--font-code);
+    font-size: 0.8rem;
+}
+
+.timeline-content h3 {
+    color: var(--ocean);
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    max-width: 650px;
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.9;
+}
+
+.timeline-item:last-child {
+    border-bottom: 1px solid var(--border);
+}
+
+
+/* =====================================================
+   14. ACHIEVEMENTS
+===================================================== */
+
+.achievement-section {
+    padding: 110px 10%;
+}
+
+.achievement-feature {
+    margin-top: 50px;
+    padding: 55px;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 50px;
+    background: var(--ocean);
+    color: var(--white);
+}
+
+.achievement-number {
+    color: var(--cyan);
+    font-family: var(--font-display);
+    font-size: 7rem;
+    line-height: 1;
+}
+
+.achievement-feature h2 {
+    color: var(--white);
+    font-family: var(--font-display);
+    font-size: clamp(2.3rem, 4vw, 3.8rem);
+    line-height: 1.05;
+}
+
+.achievement-feature p {
+    max-width: 650px;
+    margin-top: 20px;
+    color: #B7CBD4;
+    font-size: 0.9rem;
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   15. GROUP WORK
+===================================================== */
+
+.group-introduction {
+    padding: 110px 10%;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 90px;
+}
+
+.group-introduction h2 {
+    margin-top: 20px;
+    color: var(--ocean);
+    font-family: var(--font-display);
+    font-size: clamp(2.8rem, 5vw, 4.8rem);
+    line-height: 1.05;
+}
+
+.group-introduction-content p {
+    margin-bottom: 20px;
+    color: var(--muted);
+    line-height: 2;
+}
+
+.group-principles {
+    padding: 100px 10%;
+    background: var(--surface);
+}
+
+.principle-grid {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.principle-card {
+    padding: 35px;
+    background: var(--white);
+    border: 1px solid var(--border);
+}
+
+.principle-card span {
+    color: var(--cyan);
+    font-family: var(--font-code);
+    font-size: 0.72rem;
+}
+
+.principle-card h3 {
+    margin: 22px 0 12px;
+    color: var(--ocean);
+    font-family: var(--font-display);
+    font-size: 1.45rem;
+}
+
+.principle-card p {
+    color: var(--muted);
+    font-size: 0.86rem;
+    line-height: 1.85;
+}
+
+.group-reflection {
+    padding: 110px 10%;
+}
+
+.reflection-card {
+    max-width: 950px;
+    padding: 50px;
+    background: var(--ice);
+    border-left: 5px solid var(--cyan);
+}
+
+.reflection-card p {
+    margin-bottom: 18px;
+    color: var(--text);
+    font-size: 0.95rem;
+    line-height: 2;
+}
+
+
+/* =====================================================
+   16. RESPONSIVE INNER PAGES
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .about-introduction,
+    .group-introduction {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .traits-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .achievement-feature {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .content-grid,
+    .info-grid,
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .subpage-hero,
+    .page-section,
+    .content-section,
+    .about-introduction,
+    .about-traits,
+    .timeline-section,
+    .achievement-section,
+    .group-introduction,
+    .group-principles,
+    .group-reflection {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .subpage-hero {
+        min-height: 400px;
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .subpage-hero h1,
+    .application-hero h1,
+    .email-hero h1,
+    .study-hero h1 {
+        font-size: 3.5rem;
+        letter-spacing: -3px;
+    }
+
+    .traits-grid,
+    .principle-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .achievement-feature,
+    .reflection-card {
+        padding: 30px;
+    }
+
+    .achievement-number {
+        font-size: 5rem;
+    }
+   }
