@@ -6,27 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="The academic and professional portfolio of Kgosi David Mogatle, Business Intelligence and Data Analytics student.">
+          content="Explore the academic journey, developing skills, professional ambitions and reflections of Kgosi David Mogatle, a Business Intelligence and Data Analytics student.">
 
     <meta name="theme-color" content="#071b2c">
+
+    <meta property="og:title"
+          content="Kgosi David Mogatle | Digital Portfolio">
+    <meta property="og:description"
+          content="A portfolio documenting my academic development, interests, projects and professional aspirations.">
+    <meta property="og:type" content="website">
 
     <title>Kgosi David Mogatle | Digital Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="top">
 
     <!-- ================= HEADER ================= -->
     <header class="site-header">
 
-        <a href="index.html" class="brand" aria-label="Kgosi David Mogatle home">
+        <a href="index.html"
+           class="brand"
+           aria-label="Kgosi David Mogatle — Home">
+
             <span class="brand-symbol">K.</span>
             <span class="brand-name">KGOSI MOGATLE</span>
+
         </a>
 
         <nav class="main-navigation" aria-label="Main navigation">
-            <a href="index.html" class="active" aria-current="page">Home</a>
+
+            <a href="index.html"
+               class="active"
+               aria-current="page">Home</a>
+
             <a href="about.html">About</a>
             <a href="academic-journey.html">Academics</a>
             <a href="achievements.html">Achievements</a>
@@ -38,6 +52,7 @@
             <a href="email-template.html">Email</a>
             <a href="study-resources.html">Resources</a>
             <a href="contact.html">Contact</a>
+
         </nav>
 
         <a href="contact.html" class="header-contact">
@@ -50,13 +65,13 @@
     <!-- ================= MAIN CONTENT ================= -->
     <main>
 
-        <!-- HERO -->
-        <section class="hero-section">
+        <!-- ================= HERO ================= -->
+        <section class="hero-section" aria-labelledby="hero-title">
 
             <div class="hero-content">
 
                 <div class="hero-label">
-                    <span class="status-dot"></span>
+                    <span class="status-dot" aria-hidden="true"></span>
                     BUSINESS INTELLIGENCE &amp; DATA ANALYTICS
                 </div>
 
@@ -64,32 +79,44 @@
                     HELLO, I'M KGOSI DAVID MOGATLE.
                 </p>
 
-                <h1>
+                <h1 id="hero-title">
                     THINK<br>
                     BEYOND<br>
                     <span>THE DATA.</span>
                 </h1>
 
                 <p class="hero-description">
-                    An undergraduate Business Intelligence and Data Analytics
-                    student with an interest in technology, business finance
-                    and the power of information to shape better decisions.
+                    I am an undergraduate Business Intelligence and Data
+                    Analytics student with an interest in technology,
+                    business, finance and the power of information to
+                    support better decisions. I am building the knowledge,
+                    skills and perspective to turn what I learn into
+                    meaningful opportunities.
                 </p>
 
                 <div class="hero-actions">
+
                     <a href="about.html" class="button-primary">
-                        Discover my journey <span aria-hidden="true">↗</span>
+                        Discover my journey
+                        <span aria-hidden="true">↗</span>
                     </a>
 
                     <a href="cv.html" class="button-text">
-                        View my CV <span aria-hidden="true">→</span>
+                        View my CV
+                        <span aria-hidden="true">→</span>
                     </a>
+
+                </div>
+
+                <div class="hero-personal-note">
+                    <span class="hero-note-line" aria-hidden="true"></span>
+                    <p>Curious about possibilities. Committed to growth.</p>
                 </div>
 
             </div>
 
 
-            <!-- EDITORIAL VISUAL -->
+            <!-- ================= PROFILE VISUAL ================= -->
             <div class="hero-visual">
 
                 <div class="visual-topline">
@@ -99,13 +126,38 @@
 
                 <div class="visual-main">
 
-                    <div class="visual-circle circle-one"></div>
-                    <div class="visual-circle circle-two"></div>
+                    <div class="visual-circle circle-one"
+                         aria-hidden="true"></div>
 
-                    <div class="visual-number">01</div>
+                    <div class="visual-circle circle-two"
+                         aria-hidden="true"></div>
+
+                    <!--
+                        PROFILE PHOTO:
+                        Save Kgosi's photo inside an "images" folder.
+                        Recommended path: images/kgosi.jpg
+                        Change the filename below if yours differs.
+                    -->
+                    <figure class="home-profile">
+
+                        <img
+                            src="images/kgosi1.jpg"
+                            alt="Portrait of Kgosi David Mogatle"
+                            class="home-profile-image"
+                        >
+
+                        <figcaption class="home-profile-caption">
+                            <span>THE PERSON BEHIND THE PORTFOLIO</span>
+                            <strong>Kgosi David Mogatle</strong>
+                        </figcaption>
+
+                    </figure>
+
+                    <div class="visual-number" aria-hidden="true">01</div>
 
                     <div class="visual-message">
                         <span>MY APPROACH</span>
+
                         <h2>
                             Curiosity<br>
                             creates<br>
@@ -131,8 +183,9 @@
         </section>
 
 
-        <!-- CORE STRENGTHS -->
-        <section class="intro-strip" aria-label="Areas of interest">
+        <!-- ================= CORE INTERESTS ================= -->
+        <section class="intro-strip"
+                 aria-label="Core areas of interest">
 
             <div class="strip-item">
                 <span class="strip-number">01</span>
@@ -152,16 +205,19 @@
         </section>
 
 
-        <!-- INTRODUCTION -->
-        <section class="home-overview">
+        <!-- ================= INTRODUCTION ================= -->
+        <section class="home-overview"
+                 aria-labelledby="overview-title">
 
             <div class="section-heading">
+
                 <span class="section-index">01 / INTRODUCTION</span>
 
-                <h2>
+                <h2 id="overview-title">
                     More than a qualification.<br>
                     <span>A direction.</span>
                 </h2>
+
             </div>
 
             <div class="overview-content">
@@ -169,21 +225,30 @@
                 <p>
                     I am interested in understanding how technology and
                     business intersect. Through my studies in Business
-                    Intelligence and Data Analytics, I am developing an
+                    Intelligence and Data Analytics, I am developing my
                     understanding of how information, numerical reasoning
                     and business knowledge can contribute to informed
                     decision-making.
                 </p>
 
                 <p>
-                    My interests extend beyond the analytical field.
-                    Entrepreneurship is another part of my ambition,
-                    reflecting my desire to explore ideas, identify
-                    opportunities and create meaningful value.
+                    I see learning as more than completing academic
+                    requirements. It is an opportunity to challenge my
+                    assumptions, strengthen my problem-solving abilities
+                    and become more confident in applying knowledge
+                    beyond the classroom.
+                </p>
+
+                <p>
+                    My interests also extend to entrepreneurship.
+                    I am drawn to the process of identifying opportunities,
+                    developing ideas and exploring how thoughtful
+                    solutions can create meaningful value.
                 </p>
 
                 <a href="about.html" class="text-link">
-                    More about me <span aria-hidden="true">↗</span>
+                    More about me
+                    <span aria-hidden="true">↗</span>
                 </a>
 
             </div>
@@ -191,16 +256,178 @@
         </section>
 
 
-        <!-- CAREER DIRECTIONS -->
-        <section class="direction-section">
+        <!-- ================= PORTFOLIO GUIDE ================= -->
+        <section class="portfolio-preview"
+                 aria-labelledby="portfolio-preview-title">
+
+            <div class="section-heading">
+
+                <span class="section-index">02 / EXPLORE THE PORTFOLIO</span>
+
+                <h2 id="portfolio-preview-title">
+                    The journey behind<br>
+                    <span>the ambition.</span>
+                </h2>
+
+                <p>
+                    This portfolio brings together the experiences,
+                    learning, skills and reflections that are shaping
+                    my academic and professional development.
+                </p>
+
+            </div>
+
+            <div class="portfolio-preview-grid">
+
+                <a href="academic-journey.html"
+                   class="preview-card">
+
+                    <span class="preview-card-number">01</span>
+                    <span class="preview-card-arrow"
+                          aria-hidden="true">↗</span>
+
+                    <h3>Academic Journey</h3>
+
+                    <p>
+                        My educational background, learning experiences
+                        and continuing academic development.
+                    </p>
+
+                    <span class="preview-card-link">
+                        EXPLORE ACADEMICS
+                    </span>
+
+                </a>
+
+
+                <a href="achievements.html"
+                   class="preview-card">
+
+                    <span class="preview-card-number">02</span>
+                    <span class="preview-card-arrow"
+                          aria-hidden="true">↗</span>
+
+                    <h3>Achievements</h3>
+
+                    <p>
+                        Milestones, accomplishments and experiences
+                        that contribute to my progress.
+                    </p>
+
+                    <span class="preview-card-link">
+                        VIEW ACHIEVEMENTS
+                    </span>
+
+                </a>
+
+
+                <a href="group-work.html"
+                   class="preview-card">
+
+                    <span class="preview-card-number">03</span>
+                    <span class="preview-card-arrow"
+                          aria-hidden="true">↗</span>
+
+                    <h3>Group Work</h3>
+
+                    <p>
+                        Collaboration, shared responsibility,
+                        communication and lessons from teamwork.
+                    </p>
+
+                    <span class="preview-card-link">
+                        EXPLORE GROUP WORK
+                    </span>
+
+                </a>
+
+
+                <a href="skills-projects.html"
+                   class="preview-card">
+
+                    <span class="preview-card-number">04</span>
+                    <span class="preview-card-arrow"
+                          aria-hidden="true">↗</span>
+
+                    <h3>Skills &amp; Projects</h3>
+
+                    <p>
+                        The capabilities I am developing and the
+                        practical work through which I apply my learning.
+                    </p>
+
+                    <span class="preview-card-link">
+                        EXPLORE MY SKILLS
+                    </span>
+
+                </a>
+
+
+                <a href="study-resources.html"
+                   class="preview-card">
+
+                    <span class="preview-card-number">05</span>
+                    <span class="preview-card-arrow"
+                          aria-hidden="true">↗</span>
+
+                    <h3>Study Resources</h3>
+
+                    <p>
+                        Learning approaches, useful resources and
+                        strategies that support my development.
+                    </p>
+
+                    <span class="preview-card-link">
+                        EXPLORE RESOURCES
+                    </span>
+
+                </a>
+
+
+                <a href="career-goals.html"
+                   class="preview-card">
+
+                    <span class="preview-card-number">06</span>
+                    <span class="preview-card-arrow"
+                          aria-hidden="true">↗</span>
+
+                    <h3>Career Goals</h3>
+
+                    <p>
+                        My professional aspirations and the steps
+                        I intend to take towards achieving them.
+                    </p>
+
+                    <span class="preview-card-link">
+                        EXPLORE MY GOALS
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CAREER DIRECTIONS ================= -->
+        <section class="direction-section"
+                 aria-labelledby="direction-title">
 
             <div class="direction-heading">
-                <span class="section-index">02 / WHERE I'M HEADED</span>
 
-                <h2>
+                <span class="section-index">03 / WHERE I'M HEADED</span>
+
+                <h2 id="direction-title">
                     Two ambitions.<br>
                     <span>One mindset.</span>
                 </h2>
+
+                <p>
+                    I want to build a future where analytical thinking,
+                    continuous learning and creative problem-solving
+                    work together to create meaningful opportunities.
+                </p>
+
             </div>
 
             <div class="direction-grid">
@@ -216,13 +443,15 @@
                     <h3>Data<br>Analyst.</h3>
 
                     <p>
-                        Exploring how data can reveal patterns,
-                        communicate insights and support better
-                        business decisions.
+                        I aspire to develop the ability to interpret
+                        information, recognise patterns and communicate
+                        insights that help organisations understand
+                        challenges and make informed business decisions.
                     </p>
 
                     <a href="career-goals.html">
-                        Explore this direction ↗
+                        Explore this direction
+                        <span aria-hidden="true">↗</span>
                     </a>
 
                 </article>
@@ -233,18 +462,21 @@
                     <span class="card-number">02</span>
 
                     <span class="card-category">
-                        PERSONAL AMBITION
+                        ENTREPRENEURIAL AMBITION
                     </span>
 
                     <h3>Entre-<br>preneur.</h3>
 
                     <p>
-                        Developing the mindset to recognise opportunities,
-                        transform ideas and build sustainable ventures.
+                        I also want to explore entrepreneurship:
+                        recognising opportunities, developing ideas
+                        and learning how to build sustainable ventures
+                        that provide value.
                     </p>
 
                     <a href="career-goals.html">
-                        Explore this direction ↗
+                        Explore this direction
+                        <span aria-hidden="true">↗</span>
                     </a>
 
                 </article>
@@ -254,26 +486,61 @@
         </section>
 
 
-        <!-- CLOSING CALL TO ACTION -->
-        <section class="home-closing">
+        <!-- ================= PERSONAL PHILOSOPHY ================= -->
+        <section class="home-philosophy"
+                 aria-labelledby="philosophy-title">
 
-            <span class="section-index">
-                03 / THE JOURNEY CONTINUES
-            </span>
+            <span class="section-index">04 / A PERSONAL PERSPECTIVE</span>
 
-            <h2>
+            <h2 id="philosophy-title">
                 Still learning.<br>
-                Still becoming.
+                Still questioning.<br>
+                Still <span>becoming.</span>
             </h2>
 
             <p>
-                Every experience contributes to the person and professional
-                I am working towards becoming.
+                I recognise that professional growth is a continuous
+                process. Every new concept, challenge and experience
+                offers an opportunity to learn, reflect and improve.
+                I am building my future one lesson and one decision
+                at a time.
             </p>
 
-            <a href="contact.html" class="button-primary">
-                Connect with me <span aria-hidden="true">↗</span>
-            </a>
+        </section>
+
+
+        <!-- ================= CLOSING CALL TO ACTION ================= -->
+        <section class="home-closing"
+                 aria-labelledby="closing-title">
+
+            <span class="section-index">
+                05 / THE JOURNEY CONTINUES
+            </span>
+
+            <h2 id="closing-title">
+                The next chapter<br>
+                starts with <span>curiosity.</span>
+            </h2>
+
+            <p>
+                Explore my experiences, learn more about my ambitions
+                or connect with me as I continue developing my academic
+                and professional path.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="about.html" class="button-primary">
+                    Get to know me
+                    <span aria-hidden="true">↗</span>
+                </a>
+
+                <a href="contact.html" class="button-text">
+                    Connect with me
+                    <span aria-hidden="true">→</span>
+                </a>
+
+            </div>
 
         </section>
 
@@ -283,15 +550,35 @@
     <!-- ================= FOOTER ================= -->
     <footer class="site-footer">
 
-        <a href="index.html" class="footer-brand" aria-label="Back to home">
+        <a href="index.html"
+           class="footer-brand"
+           aria-label="Return to homepage">
+
             K.
+
         </a>
 
-        <p>
-            KGOSI DAVID MOGATLE · ACADEMIC &amp; PROFESSIONAL PORTFOLIO
-        </p>
+        <div class="footer-information">
 
-        <span>© 2026</span>
+            <p>KGOSI DAVID MOGATLE</p>
+
+            <p>
+                BUSINESS INTELLIGENCE &amp; DATA ANALYTICS
+            </p>
+
+            <p>
+                ACADEMIC &amp; PROFESSIONAL PORTFOLIO
+            </p>
+
+        </div>
+
+        <span class="footer-copyright">
+            &copy; 2026
+        </span>
+
+        <a href="#top" class="back-to-top">
+            BACK TO TOP <span aria-hidden="true">↑</span>
+        </a>
 
     </footer>
 
