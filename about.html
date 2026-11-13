@@ -4,58 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn more about Kgosi David Mogatle, his interests, academic identity and ambitions.">
+
+    <meta name="description"
+          content="Meet Kgosi David Mogatle, a Business Intelligence and Data Analytics student exploring technology, business finance, personal development and entrepreneurship.">
+
+    <meta name="theme-color" content="#071b2c">
+
     <title>About Me | Kgosi David Mogatle</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="top">
 
+    <!-- ================= HEADER ================= -->
     <header class="site-header">
-        <a href="index.html" class="brand">
+
+        <a href="index.html"
+           class="brand"
+           aria-label="Kgosi David Mogatle — Home">
+
             <span class="brand-symbol">K.</span>
             <span class="brand-name">KGOSI MOGATLE</span>
+
         </a>
 
-       <header class="site-header">
-    <a href="index.html" class="brand">KDM<span>.</span></a>
+        <nav class="main-navigation" aria-label="Main navigation">
 
-    <nav class="main-navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="academic-journey.html">Academics</a>
-        <a href="achievements.html">Achievements</a>
-        <a href="group-work.html">Group Work</a>
-        <a href="skills-projects.html">Skills</a>
-        <a href="career-goals.html">Career Goals</a>
-        <a href="cv.html">CV</a>
-        <a href="application-letter.html">Application</a>
-        <a href="email-template.html">Email</a>
-        <a href="study-resources.html">Resources</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-       </header> 
+            <a href="index.html">Home</a>
 
-        <a href="contact.html" class="header-contact">Get in touch ↗</a>
+            <a href="about.html"
+               class="active"
+               aria-current="page">About</a>
+
+            <a href="academic-journey.html">Academics</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="group-work.html">Group Work</a>
+            <a href="skills-projects.html">Skills</a>
+            <a href="career-goals.html">Career Goals</a>
+            <a href="cv.html">CV</a>
+            <a href="application-letter.html">Application</a>
+            <a href="email-template.html">Email</a>
+            <a href="study-resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+        <a href="contact.html" class="header-contact">
+            Get in touch <span aria-hidden="true">↗</span>
+        </a>
+
     </header>
 
 
+    <!-- ================= MAIN CONTENT ================= -->
     <main>
 
-        <section class="page-hero about-page-hero">
+        <!-- ================= PAGE HERO ================= -->
+        <section class="page-hero about-page-hero"
+                 aria-labelledby="about-hero-title">
 
             <div class="page-hero-content">
-                <span class="section-index">01 / GET TO KNOW ME</span>
 
-                <h1>
+                <span class="section-index">
+                    01 / GET TO KNOW ME
+                </span>
+
+                <h1 id="about-hero-title">
                     Beyond<br>
                     the <span>numbers.</span>
                 </h1>
 
                 <p>
                     An introduction to the person behind the academic
-                    journey, interests and ambitions.
+                    journey: the interests, values and ambitions
+                    shaping my development.
                 </p>
+
+                <a href="#who-i-am" class="text-link">
+                    Get to know me
+                    <span aria-hidden="true">↓</span>
+                </a>
+
             </div>
 
             <div class="page-hero-number">
@@ -67,7 +97,8 @@
         </section>
 
 
-        <section class="about-introduction">
+        <!-- ================= PERSONAL INTRODUCTION ================= -->
+        <section class="about-introduction" id="who-i-am">
 
             <div class="about-side-label">
                 <span>WHO I AM</span>
@@ -84,23 +115,32 @@
                 <p>
                     My name is Kgosi David Mogatle. I am an undergraduate
                     student pursuing a Bachelor of Science in Business
-                    Intelligence and Data Analytics at Botswana School of
-                    Business Sciences.
+                    Intelligence and Data Analytics at Botswana School
+                    of Business Sciences.
                 </p>
 
                 <p>
                     I consider myself diligent, analytical and articulate.
                     I am interested in understanding how information,
                     technology and business knowledge work together,
-                    particularly in an environment where decisions are
-                    influenced by data.
+                    particularly in environments where data influences
+                    decisions, strategy and organisational performance.
                 </p>
 
                 <p>
                     My academic interests extend into computer technology
                     and its practical application in business, as well as
-                    business finance and the fundamental principles that
-                    guide financial decisions.
+                    business finance and the principles that influence
+                    financial decisions. I am curious about how these
+                    different areas connect and how a deeper understanding
+                    of them can help me approach problems more thoughtfully.
+                </p>
+
+                <p>
+                    Beyond my current studies, I want to continue developing
+                    my perspective, strengthening my capabilities and
+                    discovering how I can apply what I learn to real-world
+                    situations.
                 </p>
 
             </div>
@@ -108,61 +148,164 @@
         </section>
 
 
-        <section class="about-interests">
+        <!-- ================= PROFILE PHOTOGRAPH ================= -->
+        <section class="about-profile-section"
+                 aria-labelledby="profile-photo-title">
+
+            <div class="about-profile-image-wrapper">
+
+                <!--
+                    Save Kgosi's photograph as:
+                    images/kgosi.jpg
+
+                    Use the same filename as the homepage image.
+                    Change the path if your actual filename differs.
+                -->
+
+                <img
+                    src="images/kgosi2.jpg"
+                    alt="Portrait of Kgosi David Mogatle"
+                    class="about-profile-image"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="about-profile-caption">
+
+                <span class="section-index">
+                    A PERSONAL INTRODUCTION
+                </span>
+
+                <h2 id="profile-photo-title">
+                    The person<br>
+                    behind the <span>ambition.</span>
+                </h2>
+
+                <p>
+                    A student, a developing professional and an individual
+                    continuing to learn, question and grow.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INTELLECTUAL INTERESTS ================= -->
+        <section class="about-interests"
+                 aria-labelledby="interests-title">
 
             <div class="interests-heading">
-                <span class="section-index">02 / INTELLECTUAL INTERESTS</span>
-                <h2>What captures<br>my attention.</h2>
+
+                <span class="section-index">
+                    02 / INTELLECTUAL INTERESTS
+                </span>
+
+                <h2 id="interests-title">
+                    What captures<br>
+                    my attention.
+                </h2>
+
+                <p>
+                    The subjects I am interested in help shape how
+                    I understand technology, organisations and the
+                    decisions that influence their development.
+                </p>
+
             </div>
 
             <div class="interest-list">
 
                 <article class="interest-item">
+
                     <span class="interest-number">01</span>
 
                     <div class="interest-content">
+
                         <h3>Computer Technology</h3>
+
                         <p>
-                            Exploring technology, its capabilities and
-                            the ways it can be applied to solve problems
-                            and improve business operations.
+                            I am interested in exploring technology,
+                            understanding its capabilities and learning
+                            how digital tools can solve problems,
+                            improve processes and support innovation.
                         </p>
+
                     </div>
 
-                    <span class="interest-arrow">↗</span>
+                    <span class="interest-arrow"
+                          aria-hidden="true">↗</span>
+
                 </article>
 
 
                 <article class="interest-item">
+
                     <span class="interest-number">02</span>
 
                     <div class="interest-content">
+
                         <h3>Business Intelligence</h3>
+
                         <p>
-                            Understanding how data can be transformed
-                            into meaningful information that supports
+                            I want to understand how data can be
+                            transformed into useful information,
+                            revealing patterns and supporting better
                             organisational planning and decision-making.
                         </p>
+
                     </div>
 
-                    <span class="interest-arrow">↗</span>
+                    <span class="interest-arrow"
+                          aria-hidden="true">↗</span>
+
                 </article>
 
 
                 <article class="interest-item">
+
                     <span class="interest-number">03</span>
 
                     <div class="interest-content">
+
                         <h3>Business Finance</h3>
+
                         <p>
-                            Developing an understanding of financial
-                            fundamentals and how financial knowledge
-                            contributes to the management and sustainability
-                            of businesses.
+                            I am interested in financial fundamentals
+                            and how financial knowledge contributes
+                            to planning, resource management and
+                            the long-term sustainability of businesses.
                         </p>
+
                     </div>
 
-                    <span class="interest-arrow">↗</span>
+                    <span class="interest-arrow"
+                          aria-hidden="true">↗</span>
+
+                </article>
+
+
+                <article class="interest-item">
+
+                    <span class="interest-number">04</span>
+
+                    <div class="interest-content">
+
+                        <h3>Entrepreneurship</h3>
+
+                        <p>
+                            Entrepreneurship interests me because it
+                            involves recognising opportunities, developing
+                            ideas and exploring how solutions can become
+                            sustainable ventures that create value.
+                        </p>
+
+                    </div>
+
+                    <span class="interest-arrow"
+                          aria-hidden="true">↗</span>
+
                 </article>
 
             </div>
@@ -170,42 +313,76 @@
         </section>
 
 
-        <section class="personal-qualities">
+        <!-- ================= PERSONAL ATTRIBUTES ================= -->
+        <section class="personal-qualities"
+                 aria-labelledby="qualities-title">
 
             <div class="qualities-heading">
-                <span class="section-index">03 / PERSONAL ATTRIBUTES</span>
-                <h2>How I approach<br>the things I do.</h2>
+
+                <span class="section-index">
+                    03 / PERSONAL ATTRIBUTES
+                </span>
+
+                <h2 id="qualities-title">
+                    How I approach<br>
+                    the things I do.
+                </h2>
+
+                <p>
+                    The qualities I value influence how I approach
+                    learning, responsibilities and opportunities
+                    for personal development.
+                </p>
+
             </div>
 
             <div class="qualities-grid">
 
                 <article class="quality-card">
-                    <span>01</span>
+
+                    <span class="quality-number">01</span>
+
                     <h3>Diligent</h3>
+
                     <p>
-                        Committed to applying effort, consistency and
-                        attention to the tasks and responsibilities
-                        I undertake.
+                        I value commitment, consistency and attention
+                        to detail. I aim to approach my responsibilities
+                        with care and recognise that meaningful progress
+                        requires sustained effort.
                     </p>
+
                 </article>
 
+
                 <article class="quality-card">
-                    <span>02</span>
+
+                    <span class="quality-number">02</span>
+
                     <h3>Analytical</h3>
+
                     <p>
-                        Interested in examining information, identifying
-                        relationships and understanding the reasoning
-                        behind outcomes.
+                        I am interested in examining information,
+                        identifying relationships and understanding
+                        the reasoning behind outcomes rather than
+                        accepting conclusions without consideration.
                     </p>
+
                 </article>
 
+
                 <article class="quality-card">
-                    <span>03</span>
+
+                    <span class="quality-number">03</span>
+
                     <h3>Articulate</h3>
+
                     <p>
-                        I value the ability to communicate thoughts,
-                        ideas and information clearly and effectively.
+                        I value clear and effective communication.
+                        Being able to express ideas thoughtfully
+                        is important when sharing knowledge,
+                        collaborating and explaining information.
                     </p>
+
                 </article>
 
             </div>
@@ -213,15 +390,21 @@
         </section>
 
 
-        <section class="about-perspective">
+        <!-- ================= PERSONAL PERSPECTIVE ================= -->
+        <section class="about-perspective"
+                 aria-labelledby="perspective-title">
 
             <div class="perspective-label">
+
                 <span>04 / PERSONAL PERSPECTIVE</span>
+
                 <span>CONTINUOUS DEVELOPMENT</span>
+
             </div>
 
             <div class="perspective-content">
-                <h2>
+
+                <h2 id="perspective-title">
                     Learning is not<br>
                     simply about<br>
                     <span>knowing more.</span>
@@ -230,35 +413,124 @@
                 <p>
                     It is also about developing the ability to think
                     critically, approach unfamiliar challenges and
-                    recognise opportunities for growth. I see my
-                    academic journey as an opportunity to build both
-                    intellectual capacity and a foundation for the
-                    ambitions I intend to pursue.
+                    recognise opportunities for growth. Knowledge becomes
+                    more valuable when I can question it, connect it to
+                    other ideas and consider how it might be applied
+                    in practice.
                 </p>
+
+                <p>
+                    I see my academic journey as an opportunity to develop
+                    both intellectual capacity and personal discipline.
+                    I know that I am still learning, and I view that
+                    process as an important part of preparing for the
+                    professional ambitions I intend to pursue.
+                </p>
+
             </div>
 
         </section>
 
 
-        <section class="about-next">
-            <span class="section-index">05 / CONTINUE EXPLORING</span>
-            <h2>Every journey<br>has a beginning.</h2>
+        <!-- ================= CONTINUED DEVELOPMENT ================= -->
+        <section class="about-development"
+                 aria-labelledby="development-title">
+
+            <div class="development-heading">
+
+                <span class="section-index">
+                    05 / LOOKING FORWARD
+                </span>
+
+                <h2 id="development-title">
+                    Becoming through<br>
+                    <span>experience.</span>
+                </h2>
+
+            </div>
+
+            <div class="development-content">
+
+                <p>
+                    As I progress through my studies, I want to keep
+                    strengthening my technical understanding, analytical
+                    thinking and ability to communicate ideas clearly.
+                    I also want to learn from practical experiences,
+                    collaboration and challenges that encourage me
+                    to reconsider what I know.
+                </p>
+
+                <p>
+                    My goal is not simply to complete a qualification.
+                    It is to build a strong foundation from which I can
+                    continue learning, contribute meaningfully and explore
+                    opportunities in data analytics and entrepreneurship.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= NEXT PAGE ================= -->
+        <section class="about-next"
+                 aria-labelledby="about-next-title">
+
+            <span class="section-index">
+                06 / CONTINUE EXPLORING
+            </span>
+
+            <h2 id="about-next-title">
+                Every journey<br>
+                has a beginning.
+            </h2>
+
             <p>
-                Explore the academic experiences and milestones
-                that have contributed to my development.
+                Explore the educational experiences and milestones
+                that have contributed to my academic development.
             </p>
+
             <a href="academic-journey.html" class="button-primary">
-                Explore my academics <span>↗</span>
+                Explore my academics
+                <span aria-hidden="true">↗</span>
             </a>
+
         </section>
 
     </main>
 
 
+    <!-- ================= FOOTER ================= -->
     <footer class="site-footer">
-        <a href="index.html" class="footer-brand">K.</a>
-        <p>KGOSI DAVID MOGATLE · ACADEMIC & PROFESSIONAL PORTFOLIO</p>
-        <span>© 2026</span>
+
+        <a href="index.html"
+           class="footer-brand"
+           aria-label="Return to homepage">
+            K.
+        </a>
+
+        <div class="footer-information">
+
+            <p>KGOSI DAVID MOGATLE</p>
+
+            <p>
+                BUSINESS INTELLIGENCE &amp; DATA ANALYTICS
+            </p>
+
+            <p>
+                ACADEMIC &amp; PROFESSIONAL PORTFOLIO
+            </p>
+
+        </div>
+
+        <span class="footer-copyright">
+            &copy; 2026
+        </span>
+
+        <a href="#top" class="back-to-top">
+            BACK TO TOP <span aria-hidden="true">↑</span>
+        </a>
+
     </footer>
 
 </body>
